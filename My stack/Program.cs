@@ -7,20 +7,24 @@ namespace My_stack
 		static void Main(string[] args)
 		{
 			stack<int> myStack = new stack<int>(10);
-			for (int i = 0; i < 11; i++)
+			for (int i = 0; i < 10; i++)
 			{
 				Console.WriteLine(i);
 				myStack.push(i);
 			}
 
-			for (int i = 0; i < 11; i++)
+			for (int i = 0; i < 10; i++)
 			{
 				Console.WriteLine(myStack.pop().ToString() +" popped!");
 			}
-			for (int i = 0; i < 11; i++)
+			for (int i = 0; i < 10; i++)
 			{
 				Console.WriteLine(i);
 				myStack.push(i);
+			}
+			for (int i = 0; i < 10; i++)
+			{
+				Console.WriteLine(myStack.peek().ToString() +" peeked!");
 			}
 			for (int i = 0; i < 11; i++)
 			{
@@ -60,7 +64,7 @@ namespace My_stack
 			}
 			else
 			{
-				Console.WriteLine("Full stack");
+				throw new InvalidOperationException("Cannot push to full stack");
 			}
 		}
 
@@ -68,13 +72,11 @@ namespace My_stack
 		{
 			if (!isEmpty())
 			{
-				top -= 1;
-				return data[top];
+				return data[top-=1];
 			}
 			else
 			{
-				Console.WriteLine("Empty stack");
-				return default(T);
+				throw new InvalidOperationException("Cannot pop from empty stack");
 			}
 		}
 
@@ -82,11 +84,10 @@ namespace My_stack
 		{
 			if (!isEmpty())
 			{
-				return data[top];
+				return data[top-1];
 			} else
 			{
-				Console.WriteLine("Empty stack");
-				return default(T);
+				throw new InvalidOperationException("Cannot peek from empty stack");
 			}
 		}
 	}

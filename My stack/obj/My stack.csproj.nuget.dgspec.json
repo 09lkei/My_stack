@@ -1,25 +1,31 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\lawre\\RiderProjects\\My stack\\My stack\\My stack.csproj": {}
+    "C:\\Users\\Lawrence Kei\\RiderProjects\\My_stack\\My stack\\My stack.csproj": {}
   },
   "projects": {
-    "C:\\Users\\lawre\\RiderProjects\\My stack\\My stack\\My stack.csproj": {
+    "C:\\Users\\Lawrence Kei\\RiderProjects\\My_stack\\My stack\\My stack.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\lawre\\RiderProjects\\My stack\\My stack\\My stack.csproj",
+        "projectUniqueName": "C:\\Users\\Lawrence Kei\\RiderProjects\\My_stack\\My stack\\My stack.csproj",
         "projectName": "My stack",
-        "projectPath": "C:\\Users\\lawre\\RiderProjects\\My stack\\My stack\\My stack.csproj",
-        "packagesPath": "C:\\Users\\lawre\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\lawre\\RiderProjects\\My stack\\My stack\\obj\\",
+        "projectPath": "C:\\Users\\Lawrence Kei\\RiderProjects\\My_stack\\My stack\\My stack.csproj",
+        "packagesPath": "C:\\Users\\Lawrence Kei\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Lawrence Kei\\RiderProjects\\My_stack\\My stack\\obj\\",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
-          "C:\\Users\\lawre\\AppData\\Roaming\\NuGet\\NuGet.Config"
+          "C:\\Users\\Lawrence Kei\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
           "net5.0"
         ],
         "sources": {
+          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -43,7 +49,8 @@
             "net47",
             "net471",
             "net472",
-            "net48"
+            "net48",
+            "net481"
           ],
           "assetTargetFallback": true,
           "warn": true,
@@ -52,7 +59,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\5.0.408\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.103\\RuntimeIdentifierGraph.json"
         }
       }
     }
